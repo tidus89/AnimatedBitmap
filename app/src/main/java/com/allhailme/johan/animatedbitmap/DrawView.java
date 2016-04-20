@@ -6,6 +6,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Rect;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
@@ -106,8 +107,8 @@ public class DrawView extends SurfaceView implements Runnable {
             canvas.drawBitmap(mArcherWalkingEast[mFrame], mLeft, 0, null);
 
             //draw the knight scaled larger
-            //Rect dest = new Rect(100,0,300,200);
-            //canvas.drawBitmap(mArcherWalkingEast[mFrame], null, dest, null);
+            Rect dest = new Rect(100,0,300,200);
+            canvas.drawBitmap(mArcherWalkingEast[mFrame], null, dest, null);
 
             //draw the knight scaled REALLY BIG!
             //dest = new Rect(200,0,800,600);
